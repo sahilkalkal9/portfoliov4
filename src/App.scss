@@ -298,12 +298,47 @@ $projectnamesize : 20px;
 
 .footer-box {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     margin-top: 2cm;
+    gap: .7cm;
+}
+
+.footer-socials {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: .3cm;
+
+}
+
+.fsocial {
+    display: flex;
+    align-items: center;
+    gap: .3cm;
+    border: 2px solid rgb(40, 40, 40);
+    padding: .2cm .4cm;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .3s all ease;
+
+    &:hover {
+        background-color: rgb(40, 40, 40);
+    }
+}
+
+.fsimg {
+    width: .7cm;
+}
+
+.fstext {
+    color: white;
 }
 
 .fimg {
-    width: 1cm;
+    width: .8cm;
     cursor: pointer;
 }
 
@@ -400,7 +435,7 @@ $projectnamesize : 20px;
 }
 
 .allpro {
-    background-color: rgb(40, 40, 40);
+    background-color: transparent;
     padding: .3cm .6cm;
     border-radius: 10px;
     border: 3px solid rgb(40, 40, 40);
@@ -409,7 +444,7 @@ $projectnamesize : 20px;
     transition: .2s all ease;
 
     &:hover {
-        background-color: transparent;
+        background-color: rgb(40, 40, 40);
     }
 }
 
@@ -454,7 +489,7 @@ $projectnamesize : 20px;
     border-radius: 10px;
 }
 
-.pimg{
+.pimg {
     width: 100%;
     height: auto;
     // aspect-ratio: 16/9;
