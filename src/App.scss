@@ -512,6 +512,10 @@ $projectnamesize : 20px;
         gap: 1cm;
     }
 
+    .logo-text {
+        display: none;
+    }
+
     .home-box-left {
         gap: .3cm;
     }
@@ -548,8 +552,20 @@ $projectnamesize : 20px;
         font-size: 16px;
     }
 
+    .contact-opt {
+        font-size: 16px;
+    }
+
     .page-head {
         font-size: 40px;
+    }
+
+    .about-sub-head {
+        font-size: 22px;
+    }
+
+    .doing-list-data {
+        font-size: 16px;
     }
 
 
