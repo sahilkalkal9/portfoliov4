@@ -26,11 +26,11 @@ function Home({ theme }) {
 
                     <div className="home-buttons">
                         <Link to='/resume'>
-                            <button className="home-button">
+                            <button className={`home-button home-button-${theme}`}>
                                 Resume / CV
                             </button>
                         </Link>
-                        <button className="home-button hireme">
+                        <button className={`home-button home-button-${theme} hireme`}>
                             Hire Me
                         </button>
                     </div>
