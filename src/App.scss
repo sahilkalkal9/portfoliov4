@@ -408,6 +408,8 @@ $projectnamesize : 20px;
 .list-update {
     font-style: italic;
     font-size: 14px;
+    color: rgb(94, 94, 94);
+    margin-bottom: .2cm;
 }
 
 .list-head {
@@ -428,6 +430,11 @@ $projectnamesize : 20px;
     margin-top: 1cm;
 }
 
+.mode {
+    width: .6cm;
+    cursor: pointer;
+}
+
 .phead {
     display: flex;
     justify-content: space-between;
@@ -436,9 +443,9 @@ $projectnamesize : 20px;
 
 .allpro {
     background-color: transparent;
-    padding: .3cm .6cm;
+    padding: .2cm .4cm;
     border-radius: 10px;
-    border: 3px solid rgb(40, 40, 40);
+    border: 2px solid rgb(40, 40, 40);
     cursor: pointer;
     font-size: $subtextsize;
     transition: .2s all ease;
@@ -495,7 +502,110 @@ $projectnamesize : 20px;
     // aspect-ratio: 16/9;
 }
 
+// light theme
 
+.App-light {
+    background-color: whitesmoke;
+}
+
+.logo-text-light {
+    color: rgb(104, 104, 104);
+}
+
+.menu-item-light {
+    color: rgb(83, 83, 83);
+
+    &:hover {
+        color: black;
+    }
+}
+
+
+.head-light {
+    color: black;
+}
+
+
+.nav-light {
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+
+.head-text-light {
+    color: rgb(82, 82, 82);
+}
+
+.sub-head-light {
+    color: black;
+}
+
+.allpro-light {
+    color: black;
+
+    &:hover {
+        color: white;
+    }
+}
+
+.project-name-light {
+    color: black;
+}
+
+.project-light {
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.demo-box-light {
+    border: 1px solid rgb(131, 131, 131);
+
+    &:hover {
+        border: 1px solid black;
+
+    }
+
+}
+
+.project-button-light {
+    color: black;
+}
+
+.fsocial-light {
+    &:hover {
+        .fstext-light {
+            color: white;
+        }
+    }
+}
+
+.fstext-light {
+    color: black;
+
+
+}
+
+.page-head-light {
+    color: black;
+}
+
+.about-text-light {
+    color: black;
+}
+
+.about-sub-head-light {
+    color: black;
+}
+
+.contact-opt-light {
+    color: black;
+}
+
+.doing-list-data-light {
+    color: black;
+}
+
+.list-head-light {
+    color: black;
+}
 
 @media only screen and (max-width : 1000px) {
     .app-content {

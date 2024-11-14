@@ -13,19 +13,19 @@ function App() {
   const [theme, setTheme] = useState("dark")
 
   return (
-    <div className="App">
-      <div className="app-content">
-        <Nav theme />
+    <div className={`App App-${theme}`}>
+      <div className={`app-content app-content-${theme}`}>
+        <Nav theme={theme} setTheme={setTheme} />
         <Routes>
-          <Route path='/' element={<Home theme />} />
-          <Route path='/about-me' element={<About theme />} />
-          <Route path='/resume' element={<PDFViewer theme />} />
-          <Route path='/projects' element={<Projects theme />} />
+          <Route path='/' element={<Home theme={theme} />} />
+          <Route path='/about-me' element={<About theme={theme} />} />
+          <Route path='/resume' element={<PDFViewer theme={theme} />} />
+          <Route path='/projects' element={<Projects theme={theme} />} />
         </Routes>
 
-        <Footer />
+        <Footer theme={theme} />
       </div>
-    </div> 
+    </div>
   );
 }
 

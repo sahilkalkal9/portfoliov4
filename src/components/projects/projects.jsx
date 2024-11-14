@@ -1,16 +1,16 @@
 import "../../App.scss"
 import projects from "./project.json"
 
-function Projects() {
+function Projects({ theme }) {
     return (
         <div className="projects">
-            <p className="page-head">
+            <p className={`page-head page-head-${theme}`}>
                 Projects
             </p>
             <div className="projects-box">
                 {
                     projects.map((p) => (
-                        <div className="project">
+                        <div className={`project project-${theme}`}>
                             <div className="project-upper">
                                 {/* <img src={require(`./${p.image}`)} alt="" className="pimg" /> */}
                                 <div className="phead">
@@ -21,10 +21,10 @@ function Projects() {
                                         {p.type}
                                     </p>
                                 </div>
-                                <p className="project-name">
+                                <p className={`project-name project-name-${theme}`}>
                                     {p.name}
                                 </p>
-                                <p className="project-desc">
+                                <p className={`project-desc project-desc-${theme}`}>
                                     {p.desc}
                                 </p>
                                 <div className="tags">
@@ -39,14 +39,14 @@ function Projects() {
                             </div>
 
                             <div className="project-buttons">
-                                <div className="demo-box">
-                                    <a href={p.demo} target="blank" className="project-button">
+                                <div className={`demo-box demo-box-${theme}`}>
+                                    <a href={p.demo} target="blank" className={`project-button project-button-${theme}`}>
                                         Demo
                                     </a>
                                     <img src={require("./share.png")} alt="" className="share" />
                                 </div>
-                                <div className="demo-box">
-                                    <a href={p.code} target="blank" className="project-button">
+                                <div className={`demo-box demo-box-${theme}`}>
+                                    <a href={p.code} target="blank" className={`project-button project-button-${theme}`}>
                                         Source
                                     </a>
                                     <img src={require("./share.png")} alt="" className="share" />
