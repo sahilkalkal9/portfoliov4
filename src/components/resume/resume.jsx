@@ -1,7 +1,7 @@
 import React from 'react';
 import resumefile from "./Sahil_Kalkal_Resume.pdf"
 
-const PDFViewer = () => {
+const PDFViewer = ({ theme }) => {
 
 
     return (
@@ -15,7 +15,11 @@ const PDFViewer = () => {
                     Download PDF
                 </a>
                 <p>(Links in resume/CV will work in pdf file)</p>
-                <img src={require("./resume.jpg")} alt="" className="resume-img" />
+                {
+                    theme == "light"
+                        ? <img src={require("./resume.jpg")} alt="" className="resume-img" />
+                        : <img src={require("./resumedark.jpg")} alt="" className="resume-img" />
+                }
             </div>
         </div>
     );
