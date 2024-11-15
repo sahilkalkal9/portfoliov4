@@ -83,7 +83,7 @@ function About({ theme }) {
                         </ul>
                     </div>
                     <div className="contact-sec">
-                        <p className="about-sub-head">
+                        <p className={`about-sub-head about-sub-head-${theme}`}>
                             Hardwares I use
                         </p>
                         <ul className="ulist">
