@@ -539,10 +539,11 @@ $projectnamesize : 20px;
 }
 
 .allpro-light {
+    border: 1px solid rgb(192, 192, 192);
     color: black;
 
     &:hover {
-        color: white;
+        background-color: rgb(192, 192, 192);
     }
 }
 
@@ -556,10 +557,10 @@ $projectnamesize : 20px;
 }
 
 .demo-box-light {
-    border: 1px solid rgb(131, 131, 131);
+    border: 1px solid rgb(192, 192, 192);
 
     &:hover {
-        border: 1px solid black;
+        background-color: rgb(192, 192, 192);
 
     }
 
@@ -569,8 +570,45 @@ $projectnamesize : 20px;
     margin-top: .3cm;
     display: flex;
     flex-direction: column;
-    gap: .3cm;
+    gap: .5cm;
     align-items: flex-start;
+}
+
+.overlay-buttons {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: .5cm;
+
+}
+
+.obutton {
+    padding: .25cm;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(40, 40, 40);
+    border-radius: 10000px;
+    cursor: pointer;
+    transition: .2s all ease;
+
+    &:hover {
+        background-color: rgb(40, 40, 40);
+    }
+}
+
+
+
+.obimg {
+    width: .7cm;
+}
+
+.obutton-light {
+    border: 1px solid rgb(192, 192, 192);
+
+    &:hover {
+        background-color: rgb(192, 192, 192);
+    }
 }
 
 .sfsocials {
@@ -602,8 +640,27 @@ $projectnamesize : 20px;
     }
 }
 
+.sft-light {
+    color: black;
+}
+
 .sfstext {
     font-size: 14px;
+}
+
+.sfstext-light {
+    color: black;
+
+
+
+}
+
+.sfsocial-light {
+    border: 1px solid rgb(192, 192, 192);
+
+    &:hover {
+        background-color: rgb(192, 192, 192);
+    }
 }
 
 .project-button-light {
@@ -611,10 +668,11 @@ $projectnamesize : 20px;
 }
 
 .fsocial-light {
+    border: 1px solid rgb(192, 192, 192);
+
     &:hover {
-        .fstext-light {
-            color: white;
-        }
+        background-color: rgb(192, 192, 192);
+
     }
 }
 

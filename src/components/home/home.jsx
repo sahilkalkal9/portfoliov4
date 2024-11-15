@@ -74,18 +74,32 @@ function Home({ theme }) {
                                     {p.desc}
                                 </p>
                                 <div className="project-buttons">
-                                    <div className={`demo-box demo-box-${theme}`}>
-                                        <a href={p.demo} target="blank" className={`project-button project-button-${theme}`}>
-                                            Demo
-                                        </a>
-                                        <img src={require("../projects/share.png")} alt="" className="share" />
-                                    </div>
-                                    <div className={`demo-box demo-box-${theme}`}>
-                                        <a href={p.code} target="blank" className={`project-button project-button-${theme}`}>
-                                            Source
-                                        </a>
-                                        <img src={require("../projects/share.png")} alt="" className="share" />
-                                    </div>
+                                    <a href={p.demo} target="blank">
+                                        <div className={`demo-box demo-box-${theme}`}>
+                                            <p className={`project-button project-button-${theme}`}>
+                                                Demo
+                                            </p>
+                                            {
+                                                theme == "light"
+                                                    ? <img src={require("../projects/sharelight.png")} alt="" className="share" />
+                                                    : <img src={require("../projects/share.png")} alt="" className="share" />
+                                            }
+                                        </div>
+                                    </a>
+
+                                    <a href={p.code} target="blank">
+                                        <div className={`demo-box demo-box-${theme}`}>
+                                            <p className={`project-button project-button-${theme}`}>
+                                                Demo
+                                            </p>
+                                            {
+                                                theme == "light"
+                                                    ? <img src={require("../projects/sharelight.png")} alt="" className="share" />
+                                                    : <img src={require("../projects/share.png")} alt="" className="share" />
+                                            }
+                                        </div>
+                                    </a>
+
                                 </div>
                             </div>
                         ))
@@ -103,32 +117,32 @@ function Home({ theme }) {
                 </p>
 
                 <div className="sfdesc">
-                    <p className="sft">
+                    <p className={`sft sft-${theme}`}>
                         Alongside my work as a web developer, I run a nonprofit animal rescue and awareness organization called Stray Farm. We don’t have a shelter, but we collaborate with other shelters to rescue and care for animals in need. We do what we can to protect stray animals, raise awareness about their needs, and encourage adoption.
                     </p>
 
                     <div className="sfsocials">
-                        <div className="sfsocial">
+                        <div className={`sfsocial sfsocial-${theme}`}>
                             <img src={require("./link.png")} alt="" className="sfsimg" />
-                            <p className="sfstext">
+                            <p className={`sfstext sfstext-${theme}`}>
                                 Stray Farm
                             </p>
                         </div>
-                        <div className="sfsocial">
+                        <div className={`sfsocial sfsocial-${theme}`}>
                             <img src={require("./ig.png")} alt="" className="sfsimg" />
-                            <p className="sfstext">
+                            <p className={`sfstext sfstext-${theme}`}>
                                 Stray Farm
                             </p>
                         </div>
-                        <div className="sfsocial">
+                        <div className={`sfsocial sfsocial-${theme}`}>
                             <img src={require("./ig.png")} alt="" className="sfsimg" />
-                            <p className="sfstext">
+                            <p className={`sfstext sfstext-${theme}`}>
                                 Stray Farm Adoptions
                             </p>
                         </div>
-                        <div className="sfsocial">
+                        <div className={`sfsocial sfsocial-${theme}`}>
                             <img src={require("./ig.png")} alt="" className="sfsimg" />
-                            <p className="sfstext">
+                            <p className={`sfstext sfstext-${theme}`}>
                                 Stray Farm Awareness
                             </p>
                         </div>

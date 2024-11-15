@@ -39,18 +39,32 @@ function Projects({ theme }) {
                             </div>
 
                             <div className="project-buttons">
-                                <div className={`demo-box demo-box-${theme}`}>
-                                    <a href={p.demo} target="blank" className={`project-button project-button-${theme}`}>
-                                        Demo
-                                    </a>
-                                    <img src={require("./share.png")} alt="" className="share" />
-                                </div>
-                                <div className={`demo-box demo-box-${theme}`}>
-                                    <a href={p.code} target="blank" className={`project-button project-button-${theme}`}>
-                                        Source
-                                    </a>
-                                    <img src={require("./share.png")} alt="" className="share" />
-                                </div>
+                                <a href={p.demo} target="blank">
+                                    <div className={`demo-box demo-box-${theme}`}>
+                                        <p className={`project-button project-button-${theme}`}>
+                                            Demo
+                                        </p>
+                                        {
+                                            theme == "light"
+                                                ? <img src={require("./sharelight.png")} alt="" className="share" />
+                                                : <img src={require("./share.png")} alt="" className="share" />
+                                        }
+                                    </div>
+                                </a>
+
+                                <a href={p.code} target="blank">
+                                    <div className={`demo-box demo-box-${theme}`}>
+                                        <p className={`project-button project-button-${theme}`}>
+                                            Demo
+                                        </p>
+                                        {
+                                            theme == "light"
+                                                ? <img src={require("./sharelight.png")} alt="" className="share" />
+                                                : <img src={require("./share.png")} alt="" className="share" />
+                                        }
+                                    </div>
+                                </a>
+
                             </div>
                         </div>
                     ))

@@ -10,22 +10,35 @@ import PDFViewer from './components/resume/resume';
 
 function App() {
 
-  const [theme, setTheme] = useState("dark")
+  const [theme, setTheme] = useState("light")
 
   return (
-    <div className={`App App-${theme}`}>
-      <div className={`app-content app-content-${theme}`}>
-        <Nav theme={theme} setTheme={setTheme} />
-        <Routes>
-          <Route path='/' element={<Home theme={theme} />} />
-          <Route path='/about-me' element={<About theme={theme} />} />
-          <Route path='/resume' element={<PDFViewer theme={theme} />} />
-          <Route path='/projects' element={<Projects theme={theme} />} />
-        </Routes>
-
-        <Footer theme={theme} />
+    <>
+      <div id='overlayButtons' className="overlay-buttons">
+        <div className="obuttons">
+          <div className={`obutton obutton-${theme}`}>
+            {
+              theme == "light"
+                ? <img onClick={() => setTheme("dark")} src={require("./components/nav/moon.png")} alt="" className="obimg" />
+                : <img onClick={() => setTheme("light")} src={require("./components/nav/sun.png")} alt="" className="obimg" />
+            }
+          </div>
+        </div>
       </div>
-    </div>
+      <div className={`App App-${theme}`}>
+        <div className={`app-content app-content-${theme}`}>
+          <Nav theme={theme} setTheme={setTheme} />
+          <Routes>
+            <Route path='/' element={<Home theme={theme} />} />
+            <Route path='/about-me' element={<About theme={theme} />} />
+            <Route path='/resume' element={<PDFViewer theme={theme} />} />
+            <Route path='/projects' element={<Projects theme={theme} />} />
+          </Routes>
+
+          <Footer theme={theme} />
+        </div>
+      </div>
+    </>
   );
 }
 
