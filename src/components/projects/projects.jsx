@@ -55,7 +55,7 @@ function Projects({ theme }) {
                                 <a href={p.code} target="blank">
                                     <div className={`demo-box demo-box-${theme}`}>
                                         <p className={`project-button project-button-${theme}`}>
-                                            Demo
+                                            Source
                                         </p>
                                         {
                                             theme == "light"
