@@ -93,6 +93,47 @@ function Home({ theme }) {
 
 
                 </div>
+
+
+            </div>
+
+            <div className="sf">
+                <p className={`sub-head sub-head-${theme}`}>
+                    Stray Farm
+                </p>
+
+                <div className="sfdesc">
+                    <p className="sft">
+                        Alongside my work as a web developer, I run a nonprofit animal rescue and awareness organization called Stray Farm. We don’t have a shelter, but we collaborate with other shelters to rescue and care for animals in need. We do what we can to protect stray animals, raise awareness about their needs, and encourage adoption.
+                    </p>
+
+                    <div className="sfsocials">
+                        <div className="sfsocial">
+                            <img src={require("./link.png")} alt="" className="sfsimg" />
+                            <p className="sfstext">
+                                Stray Farm
+                            </p>
+                        </div>
+                        <div className="sfsocial">
+                            <img src={require("./ig.png")} alt="" className="sfsimg" />
+                            <p className="sfstext">
+                                Stray Farm
+                            </p>
+                        </div>
+                        <div className="sfsocial">
+                            <img src={require("./ig.png")} alt="" className="sfsimg" />
+                            <p className="sfstext">
+                                Stray Farm Adoptions
+                            </p>
+                        </div>
+                        <div className="sfsocial">
+                            <img src={require("./ig.png")} alt="" className="sfsimg" />
+                            <p className="sfstext">
+                                Stray Farm Awareness
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )

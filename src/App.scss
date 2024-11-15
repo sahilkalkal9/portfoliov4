@@ -278,7 +278,7 @@ $projectnamesize : 20px;
     background-color: blueviolet;
     color: white;
     border-radius: 10px;
-    border: 3px solid blueviolet;
+    border: 2px solid blueviolet;
     cursor: pointer;
     transition: .3s all ease;
 
@@ -289,7 +289,7 @@ $projectnamesize : 20px;
 
 .hireme {
     background-color: forestgreen;
-    border: 3px solid forestgreen;
+    border: 2px solid forestgreen;
 }
 
 // Home Page Ends Here
@@ -317,7 +317,7 @@ $projectnamesize : 20px;
     display: flex;
     align-items: center;
     gap: .3cm;
-    border: 2px solid rgb(40, 40, 40);
+    border: 1px solid rgb(40, 40, 40);
     padding: .2cm .4cm;
     border-radius: 10px;
     background-color: transparent;
@@ -445,7 +445,7 @@ $projectnamesize : 20px;
     background-color: transparent;
     padding: .2cm .4cm;
     border-radius: 10px;
-    border: 2px solid rgb(40, 40, 40);
+    border: 1px solid rgb(40, 40, 40);
     cursor: pointer;
     font-size: $subtextsize;
     transition: .2s all ease;
@@ -479,7 +479,7 @@ $projectnamesize : 20px;
     background-color: blueviolet;
     color: white;
     border-radius: 10px;
-    border: 3px solid blueviolet;
+    border: 2px solid blueviolet;
     transition: .3s all ease;
     text-align: center;
 
@@ -552,7 +552,7 @@ $projectnamesize : 20px;
 
 .project-light {
     background-color: white;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 8px 0px;
 }
 
 .demo-box-light {
@@ -563,6 +563,47 @@ $projectnamesize : 20px;
 
     }
 
+}
+
+.sfdesc {
+    margin-top: .3cm;
+    display: flex;
+    flex-direction: column;
+    gap: .3cm;
+    align-items: flex-start;
+}
+
+.sfsocials {
+    display: flex;
+    align-items: center;
+    gap: .3cm;
+    flex-wrap: wrap;
+}
+
+.sfsimg {
+    width: .55cm;
+}
+
+.sfsocial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .1cm;
+    padding: .2cm .3cm;
+    border-radius: 5px;
+    border: 1px solid rgb(40, 40, 40);
+    cursor: pointer;
+
+    transition: .3s all ease;
+
+    &:hover {
+        background-color: rgb(40, 40, 40);
+
+    }
+}
+
+.sfstext {
+    font-size: 14px;
 }
 
 .project-button-light {
