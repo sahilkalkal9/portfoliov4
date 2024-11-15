@@ -6,6 +6,7 @@
     text-decoration: none;
     font-family: "Commissioner";
     color: #bbbbbb;
+    user-select: none;
 
 }
 
@@ -387,7 +388,7 @@ $projectnamesize : 20px;
 
     &:hover {
         text-decoration: underline;
-        
+
     }
 }
 
