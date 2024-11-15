@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import "../../App.scss"
 
 function About({ theme }) {
@@ -147,6 +148,19 @@ function About({ theme }) {
 
                         </ul>
                     </div>
+
+                    <Link to="/resume">
+                        <div className={`resume-about-box resume-about-box-${theme}`}>
+                            <p className={`rtext rtext-${theme}`}>
+                                My Resume
+                            </p>
+                            {
+                                theme == "light"
+                                    ? <img src={require("../projects/sharelight.png")} alt="" className="share" />
+                                    : <img src={require("../projects/share.png")} alt="" className="share" />
+                            }
+                        </div>
+                    </Link>
                 </div>
             </div>
         </div >

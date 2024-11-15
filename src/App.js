@@ -16,11 +16,11 @@ function App() {
     <>
       <div id='overlayButtons' className="overlay-buttons">
         <div className="obuttons">
-          <div className={`obutton obutton-${theme}`}>
+          <div onClick={() => setTheme(theme == "light" ? "dark" : "light")} className={`obutton obutton-${theme}`}>
             {
               theme == "light"
-                ? <img onClick={() => setTheme("dark")} src={require("./components/nav/moon.png")} alt="" className="obimg" />
-                : <img onClick={() => setTheme("light")} src={require("./components/nav/sun.png")} alt="" className="obimg" />
+                ? <img src={require("./components/nav/moon.png")} alt="" className="obimg" />
+                : <img src={require("./components/nav/sun.png")} alt="" className="obimg" />
             }
           </div>
         </div>

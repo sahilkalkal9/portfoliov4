@@ -442,6 +442,28 @@ $projectnamesize : 20px;
     align-items: center;
 }
 
+.resume-about-box {
+    display: flex;
+    align-items: flex-end;
+    gap: .1cm;
+    cursor: pointer;
+    transition: .3s;
+    width: fit-content;
+    padding: 0cm 0cm .05cm 0cm;
+
+    &:hover {
+        border-bottom: 1px solid white;
+    }
+}
+
+.resume-about-box-light {
+    border-bottom: 1px solid black;
+}
+
+.rtext-light {
+    color: black;
+}
+
 .allpro {
     background-color: transparent;
     padding: .2cm .4cm;
