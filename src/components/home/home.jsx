@@ -122,30 +122,38 @@ function Home({ theme }) {
                     </p>
 
                     <div className="sfsocials">
-                        <div className={`sfsocial sfsocial-${theme}`}>
-                            <img src={require("./link.png")} alt="" className="sfsimg" />
-                            <p className={`sfstext sfstext-${theme}`}>
-                                Stray Farm
-                            </p>
-                        </div>
-                        <div className={`sfsocial sfsocial-${theme}`}>
-                            <img src={require("./ig.png")} alt="" className="sfsimg" />
-                            <p className={`sfstext sfstext-${theme}`}>
-                                Stray Farm
-                            </p>
-                        </div>
-                        <div className={`sfsocial sfsocial-${theme}`}>
-                            <img src={require("./ig.png")} alt="" className="sfsimg" />
-                            <p className={`sfstext sfstext-${theme}`}>
-                                Stray Farm Adoptions
-                            </p>
-                        </div>
-                        <div className={`sfsocial sfsocial-${theme}`}>
-                            <img src={require("./ig.png")} alt="" className="sfsimg" />
-                            <p className={`sfstext sfstext-${theme}`}>
-                                Stray Farm Awareness
-                            </p>
-                        </div>
+                        <a href="https://strayfarm.vercel.app" target="blank">
+                            <div className={`sfsocial sfsocial-${theme}`}>
+                                <img src={require("./link.png")} alt="" className="sfsimg" />
+                                <p className={`sfstext sfstext-${theme}`}>
+                                    Stray Farm
+                                </p>
+                            </div>
+                        </a>
+                        <a href="https://instagram.com/strayfarm" target="blank">
+                            <div className={`sfsocial sfsocial-${theme}`}>
+                                <img src={require("./ig.png")} alt="" className="sfsimg" />
+                                <p className={`sfstext sfstext-${theme}`}>
+                                    Stray Farm
+                                </p>
+                            </div>
+                        </a>
+                        <a href="https://instagram.com/strayfarm_adoptions" target="blank">
+                            <div className={`sfsocial sfsocial-${theme}`}>
+                                <img src={require("./ig.png")} alt="" className="sfsimg" />
+                                <p className={`sfstext sfstext-${theme}`}>
+                                    Stray Farm Adoptions
+                                </p>
+                            </div>
+                        </a>
+                        <a href="https://instagram.com/strayfarm_awareness" target="blank">
+                            <div className={`sfsocial sfsocial-${theme}`}>
+                                <img src={require("./ig.png")} alt="" className="sfsimg" />
+                                <p className={`sfstext sfstext-${theme}`}>
+                                    Stray Farm Awareness
+                                </p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
