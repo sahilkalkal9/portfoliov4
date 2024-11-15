@@ -142,7 +142,7 @@ function Home({ theme }) {
                             <div className={`sfsocial sfsocial-${theme}`}>
                                 <img src={require("./ig.png")} alt="" className="sfsimg" />
                                 <p className={`sfstext sfstext-${theme}`}>
-                                    Stray Farm Adoptions
+                                    SF Adoptions
                                 </p>
                             </div>
                         </a>
@@ -150,7 +150,7 @@ function Home({ theme }) {
                             <div className={`sfsocial sfsocial-${theme}`}>
                                 <img src={require("./ig.png")} alt="" className="sfsimg" />
                                 <p className={`sfstext sfstext-${theme}`}>
-                                    Stray Farm Awareness
+                                    SF Awareness
                                 </p>
                             </div>
                         </a>
